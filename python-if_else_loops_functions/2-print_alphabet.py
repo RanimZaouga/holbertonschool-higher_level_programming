@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-print(''.join(map(chr, range(97, 123))), end='')
+for a in "abcdefghijklmnopqrstuvwxyz":
+    print("{}".format(a), end='')
