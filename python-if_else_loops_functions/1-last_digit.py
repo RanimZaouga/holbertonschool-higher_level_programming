@@ -13,3 +13,4 @@ elif ld < 6 and ld != 0:
 else:
      print(f"Last digit of {number} is {ld} and is 0")
 
+print("\n")
