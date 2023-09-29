@@ -1,10 +1,17 @@
 #!/usr/bin/python3
 import sys
 
-def infinite_add(*args):
-    result = sum(int(arg) for arg in args)
-    print(result)
+def print_arguments(argv):
+    num_args = len(argv)
+
+    if num_args == 0:
+        print("0 argument(s).")
+    else:
+        print(f"{num_args} {'argument' if num_args == 1 else 'arguments'}:")
+        for i, arg in enumerate(argv):
+            print(f"{i+1}: {arg}")
 
 if __name__ == "__main__":
     args = sys.argv[1:]
-    infinite_add(*args)
+    print_arguments(args)
+
