@@ -2,10 +2,9 @@
 import sys
 
 def infinite_add(*args):
-    result = sum(int(arg) for arg in args)
+    result = sum(map(int, args))
     print(result)
 
 if __name__ == "__main__":
     args = sys.argv[1:]
     infinite_add(*args)
-
