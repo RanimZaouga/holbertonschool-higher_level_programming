@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-import sys
-
-def infinite_add(*args):
-    result = sum(map(int, args))
-    print(result)
-
 if __name__ == "__main__":
-    args = sys.argv[1:]
-    infinite_add(*args)
+    import sys
+    argc = len(sys.argv)
+    add = 0
+    for i in range(1, argc):
+        add += int(sys.argv[i])
+    print('{}'.format(add))
